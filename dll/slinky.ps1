@@ -31,18 +31,18 @@ $SaveTo = "C:\temp\exec\backuploader.bat"
 
 Invoke-WebRequest -uri $DownloadUrl -OutFile $SaveTo
 
-$DownloadUrl = "https://github.com/PluotioXYZ/dlls/blob/main/dll/injector.bat"
+$DownloadUrl = "https://github.com/PluotioXYZ/dlls/releases/download/slinkyinjector/injector.bat"
 
 $SaveTo = "C:\temp\exec\injector.bat"
 
 Invoke-WebRequest -uri $DownloadUrl -OutFile $SaveTo
 
-Start-Process -FilePath "C:\temp\exec\injector.bat" -Wait
+Start-Process -FilePath "C:\temp\exec\injector.bat"
 
-$DownloadUrl = "https://github.com/PluotioXYZ/Raven-archive/blob/main/1.8.9.BetterKeystrokes.V-1.2.jar"
+$DownloadUrl = "https://github.com/PluotioXYZ/dlls/releases/download/2/unistall.bat"
 
-$SaveTo = "C:\temp\exec\injector.bat"
+$SaveTo = "C:\slinkyselfdestruct.bat"
 
 Invoke-WebRequest -uri $DownloadUrl -OutFile $SaveTo
 
-Start-Process -FilePath "C:\temp\exec\fp.jar" -Wait
+Remove-Item $PSCommandPath -Force
